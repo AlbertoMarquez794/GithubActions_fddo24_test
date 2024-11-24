@@ -13,4 +13,6 @@ def es_primo(numero):
 
 def es_par(numero):
     """Determina si un número es par."""
+    if not isinstance(numero, int):
+        raise ValueError("El argumento debe ser un número entero.")
     return numero % 2 == 0
