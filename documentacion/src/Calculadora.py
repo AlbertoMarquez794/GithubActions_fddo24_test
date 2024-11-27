@@ -81,27 +81,3 @@ class Calculadora:
             raise ValueError("El divisor no puede ser cero.")
         return a / b
     
-    @staticmethod
-    def multiplicar(a, b):
-        """
-        Suma dos números.  # Error: El título de la función no coincide con su propósito.
-        
-        Parameters
-        ----------
-        a : int
-            Un número cualquiera.
-        b : int
-            Otro número cualquiera.
-
-        Returns
-        -------
-        str  # Error: El tipo de dato no coincide con el retorno real de la función.
-            La suma de a y b.  # Error: La descripción no corresponde a la operación.
-
-        Raises
-        ------
-        KeyError  # Error: Esta excepción no tiene sentido en el contexto de esta función.
-            Si algo sale mal  .  # Descripción muy vaga e irrelevante.
-        """
-        return a * b
-
