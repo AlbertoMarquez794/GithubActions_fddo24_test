@@ -31,3 +31,5 @@ language = 'es'
 
 # Tema de la documentación
 html_theme = 'alabaster'
+
+nitpicky = True
