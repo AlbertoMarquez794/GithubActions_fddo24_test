@@ -71,6 +71,103 @@
 <section id="referencia-api">
 <h1>Referencia API<a class="headerlink" href="#referencia-api" title="Link to this heading">¶</a></h1>
 <p>A continuación, se documentan todos los métodos disponibles en la clase <strong>GestorDeMatrices</strong>:</p>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GestorDeMatrices.</span></span><span class="sig-name descname"><span class="pre">GestorDeMatrices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">matriz</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/GestorDeMatrices.html#GestorDeMatrices"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Clase para gestionar operaciones comunes con matrices.</p>
+<section id="atributos">
+<h2>Atributos:<a class="headerlink" href="#atributos" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt>matriz<span class="classifier">list</span></dt><dd><p>Matriz principal con la que se trabajará usted.</p>
+</dd>
+</dl>
+</section>
+<section id="metodos">
+<h2>Métodos:<a class="headerlink" href="#metodos" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt>sumar(otra_matriz):</dt><dd><p>Suma la matriz actual con otra matriz.</p>
+</dd>
+<dt>multiplicar(otra_matriz):</dt><dd><p>Multiplica la matriz actual con otra matriz.</p>
+</dd>
+<dt>transponer():</dt><dd><p>Transpone la matriz actual.</p>
+</dd>
+<dt>calcular_determinante():</dt><dd><p>Calcula el determinante de la matriz actual.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">matriz</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/GestorDeMatrices.html#GestorDeMatrices.__init__"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a></dt>
+<dd><p>Inicializa el gestor con una matriz principal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>matriz</strong> – Matriz inicial (lista de listas).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">calcular_determinante</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/GestorDeMatrices.html#GestorDeMatrices.calcular_determinante"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a></dt>
+<dd><p>Calcula el determinante de la matriz actual.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Devuelve<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Determinante de la matriz.</p>
+</dd>
+<dt class="field-even">Muestra<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – Si la matriz no es cuadrada.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">multiplicar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">otra_matriz</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/GestorDeMatrices.html#GestorDeMatrices.multiplicar"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a></dt>
+<dd><p>Multiplica la matriz actual con otra matriz.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>otra_matriz</strong> – Matriz a multiplicar (lista de listas).</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Matriz resultante de la multiplicación.</p>
+</dd>
+<dt class="field-odd">Muestra<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – Si las dimensiones no son compatibles.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">sumar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">otra_matriz</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/GestorDeMatrices.html#GestorDeMatrices.sumar"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a></dt>
+<dd><p>Suma la matriz actual con otra matriz.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>otra_matriz</strong> – Matriz a sumar (lista de listas).</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Matriz resultante de la suma.</p>
+</dd>
+<dt class="field-odd">Muestra<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – Si las dimensiones no coinciden.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">transponer</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/GestorDeMatrices.html#GestorDeMatrices.transponer"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a></dt>
+<dd><p>Transpone la matriz actual.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Devuelve<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Matriz transpuesta.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</dd></dl>
+
 </section>
 <section id="notas-adicionales">
 <h1>Notas Adicionales<a class="headerlink" href="#notas-adicionales" title="Link to this heading">¶</a></h1>
