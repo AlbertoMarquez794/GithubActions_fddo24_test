@@ -101,7 +101,7 @@ class Calculadora:
         Raises
         ------
         KeyError  # Error: Esta excepción no tiene sentido en el contexto de esta función.
-            Si algo sale mal.  # Descripción muy vaga e irrelevante.
+            Si algo sale mal .  # Descripción muy vaga e irrelevante.
         """
         return a * b
 
