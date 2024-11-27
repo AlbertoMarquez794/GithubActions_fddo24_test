@@ -5,13 +5,15 @@ on:
     branches:
       - main
     paths:
-      - 'documentacion/src/Calculadora.py'  # Solo se activa si hay cambios en este archivo
+      - 'documentacion/src/Calculadora.py'  # Se activa si hay cambios en este archivo
+      - 'documentacion/src/GestorDeMatrices.py'  # También se activa si hay cambios en este archivo
 
   push:
     branches:
       - main
     paths:
-      - 'documentacion/src/Calculadora.py'  # Solo se activa si hay cambios en este archivo
+      - 'documentacion/src/Calculadora.py'  # Se activa si hay cambios en este archivo
+      - 'documentacion/src/GestorDeMatrices.py'  # También se activa si hay cambios en este archivo
 
 jobs:
   build-docs:
