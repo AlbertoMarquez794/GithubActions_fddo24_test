@@ -13,7 +13,7 @@ Haz clic en el botón Fork ubicado en la esquina superior derecha del repositori
 ### Clonar el repositorio desde GitHub
 Dirigete a la carpeta donde deseas guardar el proyecto y clona tu fork con: 
 ```bash
-glit clone git@github.com:AlbertoMarquez794/GithubActions_fddo24_test_tusuario.git
+git clone git@github.com:AlbertoMarquez794/GithubActions_fddo24_test_tusuario.git
 ```
 Sustituye "tuusuario" por el nombre. 
 Ahora accede a tu carpeta
@@ -36,3 +36,10 @@ GithubActions_ffdo24_test/
 └── requirements.txt         # Requerimientos para sphinx y flake8.
 ```
 ## Tarea
+# Instrucciones
+1. **Crea una carpeta** dentro de la carpeta de tareas, usando tu clave única como nombre de la carpeta.
+2. Dentro de esta nueva carpeta, **crea dos archivos**:
+   - **Archivo 1**: Define una función que realice una tarea de tu elección (por ejemplo, una función matemática, de manipulación de texto, o cualquier otra).
+   - **Archivo 2**: Crea un archivo donde definas un `main` que ejecute pruebas para verificar el funcionamiento de la función definida en el archivo anterior.
+3. Para las pruebas, utiliza **`pytest`** para comprobar los resultados de la función definida en el primer archivo.
+4. Luego, **crea un workflow en GitHub Actions** para ejecutar las pruebas automáticamente todos los días a las **12 PM hora Ciudad de México (CST)**. Investiga como asignar la hora. 
