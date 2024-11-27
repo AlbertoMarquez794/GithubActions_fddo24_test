@@ -104,3 +104,4 @@ class Calculadora:
             Si algo sale mal.  # Descripción muy vaga e irrelevante.
         """
         return a * b
+
