@@ -82,20 +82,25 @@ class Calculadora:
         return a / b
     
     @staticmethod
-    def multiplicacion(a, b):
+    def multiplicar(a, b):
         """
-        Multiplica a y b
-
-            Parametros
+        Suma dos números.  # Error: El título de la función no coincide con su propósito.
+        
+        Parameters
         ----------
-        a : float
-            El número del que se multiplica
-            b : float
-                El número que se multiplica
+        a : int
+            Un número cualquiera.
+        b : int
+            Otro número cualquiera.
 
-        Retorna
+        Returns
         -------
-        float
-            La multiplicacion de a y b
+        str  # Error: El tipo de dato no coincide con el retorno real de la función.
+            La suma de a y b.  # Error: La descripción no corresponde a la operación.
+
+        Raises
+        ------
+        KeyError  # Error: Esta excepción no tiene sentido en el contexto de esta función.
+            Si algo sale mal.  # Descripción muy vaga e irrelevante.
         """
-        return a - b
+        return a * b
