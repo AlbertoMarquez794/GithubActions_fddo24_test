@@ -93,7 +93,7 @@ class Calculadora:
         b : float
             El número que se multiplica
 
-        Regresa
+        Retorna
         -------
         float
             La multiplicacion de a y b
