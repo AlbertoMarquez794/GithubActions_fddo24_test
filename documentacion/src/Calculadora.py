@@ -86,12 +86,12 @@ class Calculadora:
         """
         Multiplica a y b
 
-        Parametros
+            Parametros
         ----------
         a : float
             El número del que se multiplica
-        b : float
-            El número que se multiplica
+            b : float
+                El número que se multiplica
 
         Retorna
         -------
