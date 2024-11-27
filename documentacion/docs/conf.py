@@ -8,6 +8,21 @@ extensions = [
     'sphinx.ext.viewcode'
 ]
 
+html_context = {
+    "display_github": True,  # Mostrar enlace a GitHub
+    "github_user": "tu_usuario",  # Nombre de usuario
+    "github_repo": "tu_repositorio",  # Nombre del repositorio
+    "github_version": "main",  # Rama principal
+    "conf_py_path": "/docs/",
+}
+
+templates_path = ['_templates']
+html_static_path = ['_static']
+html_css_files = [
+    'custom.css',
+]
+
+
 # Configuración general
 project = 'Documentación'
 author = 'Alberto'
