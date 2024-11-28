@@ -30,4 +30,4 @@ jobs:
     
     - name: Ejecutar pruebas con pytest
       run: |
-        pytest tareas/207480/test_function.py
+        pytest tareas/207480/test_funciones.py
