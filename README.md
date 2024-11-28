@@ -42,6 +42,6 @@ GithubActions_ffdo24_test/
    - **Archivo 1**: Define una función que realice una tarea de tu elección (por ejemplo, una función matemática, de manipulación de texto, o cualquier otra).
    - **Archivo 2**: Crea un archivo donde definas un `main` que ejecute pruebas para verificar el funcionamiento de la función definida en el archivo anterior.
 3. Para las pruebas, utiliza **`pytest`** para comprobar los resultados de la función definida en el primer archivo.
-4. Luego, **crea un workflow en GitHub Actions** para ejecutar las pruebas automáticamente todos los días a las **12 PM hora Ciudad de México (CST)**. Investiga como asignar la hora. 
+4. Luego, **crea un workflow en GitHub Actions** para ejecutar las pruebas automáticamente todos los días a las **12 PM hora Ciudad de México (CST)**. Investiga como asignar la hora. **Utiliza tu clave unica en el Workflow para no sobre escribir**. Eventualmente remueve tu tarea automatizada para que no este correindo siempre.
 
 Link de la presentación: https://www.canva.com/design/DAGXIvMn8Cc/4kB7aQXHElZKeCQ5vMdtjA/edit?utm_content=DAGXIvMn8Cc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
