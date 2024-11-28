@@ -81,3 +81,21 @@ class Calculadora:
             raise ValueError("El divisor no puede ser cero.")
         return a / b
     
+    @staticmethod
+    def multiplicar(a, b):
+        """
+        Multiplica dos números.
+
+        Parameters
+        ----------
+        a : float
+            El dividendo.
+        b : float
+            El divisor.
+
+        Returns
+        -------
+        float
+            La multiplicacion de a por 
+        """
+        return a * b
