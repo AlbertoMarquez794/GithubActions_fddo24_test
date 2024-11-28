@@ -1,0 +1,32 @@
+name: Run Tests
+
+on:
+  push:                        # Run the workflow when changes are pushed
+    branches:
+      - main                   # Only run on the main branch
+  pull_request:                # Run the workflow for pull requests targeting main
+    branches:
+      - main
+  schedule:                    # Run the workflow on a schedule
+    - cron: '0 18 * * *'       # Every day at 12 PM CST (UTC +6)
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pytest
+
+    - name: Run tests
+      run: pytest tareas/208115/test_funciones.py
