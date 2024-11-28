@@ -1,15 +1,14 @@
 name: Run Tests
 
 on:
-  schedule:
-    - cron: '0 18 * * *' # 12 PM CST (convertido a UTC, que es +6 horas)
-
-  push:
+  push:                        # Run the workflow when changes are pushed
+    branches:
+      - main                   # Only run on the main branch
+  pull_request:                # Run the workflow for pull requests targeting main
     branches:
       - main
-  pull_request:
-    branches:
-      - main
+  schedule:                    # Run the workflow on a schedule
+    - cron: '0 18 * * *'       # Every day at 12 PM CST (UTC +6)
 
 jobs:
   test:
@@ -31,4 +30,5 @@ jobs:
 
     - name: Run tests
       run: pytest tareas/208115/test_funciones.py
+
 
