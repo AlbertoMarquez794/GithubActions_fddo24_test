@@ -1,4 +1,9 @@
 def fibonacci(n):
+    '''
+    Función que calcula el n-ésimo número de la serie de Fibonacci.
+    Entrada: n (int) un número entero positivo.
+    Salida: n-ésimo número de la serie de Fibonacci (int).
+    '''
     if n < 0:
         return "La entrada debe ser un entero positivo"
     elif n == 0:

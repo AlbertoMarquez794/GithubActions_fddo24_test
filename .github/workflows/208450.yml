@@ -2,7 +2,7 @@ name: 208450
 
 on:
   schedule:
-    - cron: '0 12 * * *'  # Ejecuta el workflow todos los días a las 12 PM CST
+    - cron: '0 18 * * *'  # Ejecuta el workflow todos los días a las 12 PM CST
   push:
     branches:
       - main
