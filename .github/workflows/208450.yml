@@ -29,4 +29,4 @@ jobs:
 
     - name: Run tests
       run: |
-        pytest ../../tareas/208450/test_funciones.py # Apunta a los tests de la tarea 208450
+        pytest tareas/208450/test_funciones.py # Apunta a los tests de la tarea 208450
