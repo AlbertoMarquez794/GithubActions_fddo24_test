@@ -1,0 +1,27 @@
+name: Run Pytest
+
+on:
+  schedule:
+    # Ejecución todos los días a las 12 PM CST (Hora de Ciudad de México)
+    - cron: '0 18 * * *' # 12 PM CST corresponde a las 18:00 UTC
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pytest
+
+    - name: Run tests
+      run: pytest
