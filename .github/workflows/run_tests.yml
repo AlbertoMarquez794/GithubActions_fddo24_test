@@ -1,6 +1,7 @@
 name: Run Tests Daily
 
 on:
+  workflow_dispatch: # Esto habilita el botón de ejecución manual
   schedule:
     - cron: '0 18 * * *'  # Hora UTC, equivalente a 12 PM CST
 
