@@ -1,6 +1,7 @@
 name: Run Pytest
 
 on:
+  workflow_dispatch: # Esto habilita el botón de ejecución manual
   schedule:
     # Ejecución todos los días a las 12 PM CST (Hora de Ciudad de México)
     - cron: '0 18 * * *' # 12 PM CST corresponde a las 18:00 UTC
