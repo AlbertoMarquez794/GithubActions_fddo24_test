@@ -24,5 +24,5 @@ jobs:
         pip install pytest
 
     - name: Run tests
-      run: pytest tareas/assistant_unique_id
+      run: pytest tareas/208400
 
